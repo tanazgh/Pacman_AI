@@ -1,0 +1,11 @@
+classic:
+python pacman.py -l normal_maze -p SearchAgent -a fn=astar,heuristic=manhattanHeuristic
+python pacman.py -l normal_maze -p SearchAgent -a fn=ucs
+python pacman.py -l normal_maze -p SearchAgent -a fn=bfs
+python pacman.py -l normal_maze -p SearchAgent -a fn=dfs
+
+with ghost:
+python pacman.py -l ghost_maze -p SearchAgent -a fn=astar,heuristic=manhattanHeuristic
+python pacman.py -l ghost_maze -p SearchAgent -a fn=ucs
+python pacman.py -l ghost_maze -p SearchAgent -a fn=bfs
+python pacman.py -l ghost_maze -p SearchAgent -a fn=dfs
